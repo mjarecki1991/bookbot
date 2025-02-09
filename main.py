@@ -27,6 +27,15 @@ def count_characters(file_contents):
     return my_dict
     
     
+def sort_on(my_dict):
+    return my_dict["character"]
+    
+characters = list(my_dict.items())
+characters.sort(reverse=True, key=sort_on)
+
+print(characters)
+
+
 
 
 
